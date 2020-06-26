@@ -16,7 +16,7 @@ h1, h2
     transform: rotate(-90deg)
     float: left
     position: absolute
-    top: 500px
+    top: 430px
     font-family: 'Playfair Display', serif !important
 
 h1
@@ -103,8 +103,13 @@ header
         .video_wrapper
             margin-left: 5%
             height: 450px
-            .overlay, .video_description
+            .overlay
                 display: none
+            .video_description
+                opacity: 0
+                transform: translateY(-100px)
+                -webkit-transition: all 1200ms ease-in-out
+                transition: all 1200ms ease-in-out
             &:hover
                 .overlay
                     text-align: center
@@ -117,17 +122,22 @@ header
                     height: 449px
                     width: 800px
                     padding-top: 170px
+                    pointer-events: none !important
+                    .overlay-text
+                        pointer-events: none !important
                     #more_info
                         margin: 100px 0 0 0
                         font-size: 14px
                         color:  #ee6969 !important
+                        pointer-events: auto !important
                     p
                         color: #F1F0E8 !important
-                        
+                        cursor: pointer
                         font-size: 25px
                     img
                          height: 10px
                          width: 10px
+                         transition: 400ms ease-in all
             p
                 text-align: center
 
@@ -149,8 +159,8 @@ header
 
 footer
     position: fixed
-    bottom: -10%
-    right: -90vw
+    bottom: -130px
+    right: -85%
     width: 100vw
     height: 200px
     span
@@ -158,3 +168,12 @@ footer
     .arrow
         height: 10px
         width: 10px
+
+.f1
+    margin-top: -100px
+.f2
+    margin-top: 130px
+
+.slideItUpMan
+    opacity: 1 !important
+    transform: translateY(0) !important

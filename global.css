@@ -17,7 +17,7 @@ h1, h2 {
           transform: rotate(-90deg);
   float: left;
   position: absolute;
-  top: 500px;
+  top: 430px;
   font-family: 'Playfair Display', serif !important;
 }
 
@@ -133,8 +133,16 @@ header .dropdown-toggle::after {
   height: 450px;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper .overlay, .horizontal-scroll-wrapper #films .video_wrapper .video_description {
+.horizontal-scroll-wrapper #films .video_wrapper .overlay {
   display: none;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper .video_description {
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 1200ms ease-in-out;
+  transition: all 1200ms ease-in-out;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay {
@@ -148,22 +156,31 @@ header .dropdown-toggle::after {
   height: 449px;
   width: 800px;
   padding-top: 170px;
+  pointer-events: none !important;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay .overlay-text {
+  pointer-events: none !important;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay #more_info {
   margin: 100px 0 0 0;
   font-size: 14px;
   color: #ee6969 !important;
+  pointer-events: auto !important;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay p {
   color: #F1F0E8 !important;
+  cursor: pointer;
   font-size: 25px;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay img {
   height: 10px;
   width: 10px;
+  -webkit-transition: 400ms ease-in all;
+  transition: 400ms ease-in all;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper p {
@@ -190,8 +207,8 @@ header .dropdown-toggle::after {
 /** FOOTER **/
 footer {
   position: fixed;
-  bottom: -10%;
-  right: -90vw;
+  bottom: -130px;
+  right: -85%;
   width: 100vw;
   height: 200px;
 }
@@ -203,5 +220,19 @@ footer span {
 footer .arrow {
   height: 10px;
   width: 10px;
+}
+
+.f1 {
+  margin-top: -100px;
+}
+
+.f2 {
+  margin-top: 130px;
+}
+
+.slideItUpMan {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
 }
 /*# sourceMappingURL=global.css.map */
