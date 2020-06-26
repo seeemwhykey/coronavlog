@@ -22,56 +22,73 @@
 </head>
 <body>
     <header>
-        <h1>CORONA VLOG</h1>
-    </header>
+        <h1>Corona Vlog</h1>
 
-    <nav>
-        <ul>
-            <div class="dropdown">
-                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
-                    aria-expanded="false">
-                    <li><a href="#films">DIE FILME</a></li>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+                        aria-expanded="false">
+                        <li><a href="#films">DIE FILME</a></li>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#film1">Titel1</a>
+                        <a class="dropdown-item" href="#film2">Titel2</a>
+                        <a class="dropdown-item" href="#film3">Titel3</a>
+                        <a class="dropdown-item" href="#film4">Titel4</a>
+                        <a class="dropdown-item" href="#film5">Titel5</a>
+                        <a class="dropdown-item" href="#film6">Titel6</a>
+                    </div>
                 </div>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#film1">Titel1</a>
-                    <a class="dropdown-item" href="#film2">Titel2</a>
-                    <a class="dropdown-item" href="#film3">Titel3</a>
-                    <a class="dropdown-item" href="#film4">Titel4</a>
-                    <a class="dropdown-item" href="#film5">Titel5</a>
-                    <a class="dropdown-item" href="#film6">Titel6</a>
-                </div>
-            </div>
-            <li><a href="#project">DAS PROJEKT</a></li>
-        </ul>
-    </nav>
+                <li><a href="#project">DAS PROJEKT</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <div class="horizontal-scroll-wrapper">
         <section id="films">
+            <h2>Die Filme</h2>
             <section id="film1" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
-                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <div class="hover">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <p>Filmtitel.</p>
+                            <p>Ein Film von Hanna Schäfer</p>
+                            <p id=more_info>Mehr Infos hier</p>
+                            <img class="arrow-down" src="assets/arrow_down_pink.png">
+                        </div>
+                    </div>
+                    <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
+                </div>
             </section>
             <section id="film2" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
             </section>
             <section id="film3" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
             </section>
             <section id="film4" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
             </section>
             <section id="film5" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
             </section>
             <section id="film6" class="video_wrapper">
-                <!-- <video src="./videos/film.mp4" controls></video> -->
+                <video src="assets/videos/film_michelle.mp4" class="video" controls></video>
+                <p class="video_description">Das ist mein Beschreibungstext blablabla geiles Video</p>
             </section>
         </section>
 
         <section id="project">
-            <h1>Das Projekt</h1>
-            <p>Hier kommt der Text über unser Projekt hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            <h2>Das Projekt</h2>
+            <p class="project_description">
+                Hier kommt der Text über unser Projekt hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
                 eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
                 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -80,6 +97,13 @@
                 ipsum dolor sit amet.</p>
         </section>
     </div>
+
+    <footer>
+        <span>scroll zu den nächsten Filmen</span>
+        <img class="arrow" src="assets/arrow_right.png">
+    </footer>
+
+
     <script>
         $(function() {
  

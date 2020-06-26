@@ -1,36 +1,58 @@
+/** GLOBAL STYLING **/
 * {
   color: #F1F0E8;
 }
 
 html, body {
   width: 300%;
-  max-height: 500px;
   overflow: hidden;
   background-color: #F1F0E8 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  z-index: 0;
 }
 
-h1 {
+h1, h2 {
+  z-index: 2;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   float: left;
-  font-size: 6rem !important;
-  z-index: 99 !important;
   position: absolute;
   top: 500px;
   font-family: 'Playfair Display', serif !important;
+}
+
+h1 {
+  font-size: 8rem !important;
   font-weight: 800 !important;
   color: #ee6969 !important;
 }
 
-nav {
-  margin-bottom: 10%;
-  padding: 20px 0 20px 0;
-  height: 80px;
+h2 {
+  font-size: 4rem !important;
+  font-weight: 400 !important;
+  color: #222222 !important;
+  margin-top: 9% !important;
+}
+
+p {
+  color: #222222 !important;
+}
+
+/** NAVIGATION **/
+header {
+  height: 80px !important;
   background-color: #ee6969;
 }
 
-nav ul {
+header nav {
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 10%;
+  padding: 20px 0 20px 30%;
+  height: 100%;
+}
+
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,27 +65,27 @@ nav ul {
           flex-direction: row;
 }
 
-nav ul li {
+header nav ul li {
   font-weight: 400;
   margin-right: 200px;
   display: inline;
 }
 
-nav ul li ul > li {
+header nav ul li ul > li {
   display: block;
 }
 
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: #F1F0E8;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: #F1F0E8;
   text-decoration: none;
 }
 
-.dropdown:hover .dropdown-menu {
+header .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
   left: -23px;
@@ -71,26 +93,20 @@ nav ul li a:hover {
   background-color: #ee6969;
 }
 
-.dropdown:hover .dropdown-menu a {
+header .dropdown:hover .dropdown-menu a {
   color: #F1F0E8 !important;
 }
 
-.dropdown:hover .dropdown-menu a:hover {
+header .dropdown:hover .dropdown-menu a:hover {
   color: #ee6969 !important;
 }
 
-.dropdown-toggle::after {
+header .dropdown-toggle::after {
   display: none !important;
 }
 
+/** BODY **/
 .horizontal-scroll-wrapper {
-  margin-left: 50%;
-  height: 100vw;
-  width: 100%;
-}
-
-.horizontal-scroll-wrapper #films {
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,19 +114,94 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 1%;
+  margin-left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.horizontal-scroll-wrapper #films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2%;
+  width: auto;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper:hover .video_description {
+.horizontal-scroll-wrapper #films .video_wrapper {
+  margin-left: 5%;
+  height: 450px;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper .overlay, .horizontal-scroll-wrapper #films .video_wrapper .video_description {
+  display: none;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay {
+  text-align: center;
+  border-radius: 10px;
   display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 99;
+  margin-top: -455px;
+  height: 449px;
+  width: 800px;
+  padding-top: 170px;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper video {
-  width: 600px;
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay #more_info {
+  margin: 100px 0 0 0;
+  font-size: 14px;
+  color: #ee6969 !important;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay p {
+  color: #F1F0E8 !important;
+  font-size: 25px;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay img {
+  height: 10px;
+  width: 10px;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper p {
+  text-align: center;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper .video {
+  border-radius: 10px;
+  width: 800px;
   height: auto;
   margin-right: 50px;
+}
+
+.horizontal-scroll-wrapper #project {
+  margin-left: 10%;
+}
+
+.horizontal-scroll-wrapper #project .project_description {
+  width: 400px;
+  height: auto;
+  margin: 40% 0 0 25%;
+}
+
+/** FOOTER **/
+footer {
+  position: fixed;
+  bottom: -10%;
+  right: -90vw;
+  width: 100vw;
+  height: 200px;
+}
+
+footer span {
+  color: black;
+}
+
+footer .arrow {
+  height: 10px;
+  width: 10px;
 }
 /*# sourceMappingURL=global.css.map */
