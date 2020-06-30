@@ -13,29 +13,19 @@ html, body {
 }
 
 h1, h2 {
-  z-index: 2;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  float: left;
-  position: absolute;
-  top: 430px;
-  font-family: 'Roboto', sans-serif !important;
+  line-height: 0.9 !important;
 }
 
 h1 {
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   font-weight: 800 !important;
   color: #FADD00 !important;
-  margin-top: 3% !important;
-  margin-left: -10% !important;
 }
 
 h2 {
   font-size: 5rem !important;
   font-weight: 600 !important;
   color: #222222 !important;
-  margin-left: 8% !important;
-  margin-top: 16% !important;
 }
 
 h3 {
@@ -54,7 +44,14 @@ header {
   height: 130px !important;
   background-color: #34353C;
 }
-
+header #headlines {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  width: 90vh;
+  left: 20vw;
+  bottom: 10vh;
+}
 header nav {
   position: fixed;
   width: 100vw;
@@ -63,40 +60,29 @@ header nav {
   height: 100%;
   cursor: pointer;
 }
-
 header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 header nav ul li {
   font-weight: 400;
   margin-right: 500px;
   display: inline;
 }
-
 header nav ul li ul > li {
   display: block;
 }
-
 header nav ul li a {
   text-decoration: none;
   color: #F8F8F7;
 }
-
 header nav ul li a:hover, header nav ul li a:active {
   color: #FADD00;
   text-decoration: none;
 }
-
 header .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
@@ -104,61 +90,44 @@ header .dropdown:hover .dropdown-menu {
   border: none;
   background-color: #34353C;
 }
-
 header .dropdown:hover .dropdown-menu a {
   color: #F8F8F7 !important;
 }
-
 header .dropdown:hover .dropdown-menu a:hover {
   color: #34353C !important;
   background-color: #FADD00;
 }
-
 header .dropdown-toggle::after {
   display: none !important;
 }
 
-/** BODY **/
+/** BODY **/    
 .horizontal-scroll-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 1%;
   margin-left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
-
 .horizontal-scroll-wrapper #films {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin-left: 2%;
+  margin-left: 17.5%;
   width: auto;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper {
   margin-left: 5%;
   height: 450px;
   width: 800px;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper .overlay {
   display: none;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper .video_description {
   opacity: 0;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  -webkit-transition: all 1200ms ease-in-out;
+  transform: translateY(-100px);
   transition: all 1200ms ease-in-out;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay {
   text-align: center;
   border-radius: 10px;
@@ -171,47 +140,38 @@ header .dropdown-toggle::after {
   padding-top: 115px;
   pointer-events: none !important;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay .overlay-text {
   pointer-events: none !important;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay #more_info {
   margin: 100px 0 0 0;
   font-size: 14px;
   color: #FADD00 !important;
   pointer-events: auto !important;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay p {
   color: #F8F8F7 !important;
   cursor: pointer;
   font-size: 25px;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay img {
   height: 10px;
   width: 10px;
-  -webkit-transition: 400ms ease-in all;
   transition: 400ms ease-in all;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper p.video_description {
   text-align: center;
   margin-top: 40px;
 }
-
 .horizontal-scroll-wrapper #films .video_wrapper .video {
   border-radius: 10px;
   width: 800px;
   height: auto;
   margin-right: 50px;
 }
-
 .horizontal-scroll-wrapper #project {
   margin-left: 9%;
 }
-
 .horizontal-scroll-wrapper #project .project_description {
   width: 400px;
   height: auto;
@@ -226,11 +186,9 @@ footer {
   width: 100vw;
   height: 200px;
 }
-
 footer span {
   color: black;
 }
-
 footer .arrow {
   height: 10px;
   width: 10px;
@@ -246,7 +204,5 @@ footer .arrow {
 
 .slideItUpMan {
   opacity: 1 !important;
-  -webkit-transform: translateY(0) !important;
-          transform: translateY(0) !important;
+  transform: translateY(0) !important;
 }
-/*# sourceMappingURL=global.css.map */
