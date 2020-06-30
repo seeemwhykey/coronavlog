@@ -54,44 +54,44 @@
         </div>
 
         <nav>
-            <ul>
-                <div class="dropdown">
-                    <div class="dropdown-toggle js-slidein" type="button" id="dropdownMenuButton" aria-haspopup="true"
-                        aria-expanded="false">
-                        <li>DIE FILME</li>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" onclick="scrollToAnker(1)">Corona-Kommunikation in der IT-Branche</a>
-                        <a class="dropdown-item" onclick="scrollToAnker(2)">Gesellschaftsliebender Student findet seinen
-                            Weg durch die (Corona-) Krise</a>
-                        <a class="dropdown-item" onclick="scrollToAnker(3)">Kommunikation in Familien in Zeiten von
-                            Corona</a>
-                        <a class="dropdown-item" onclick="scrollToAnker(4)">Abstand innerhalb der Familie in Zeiten von
-                            Corona</a>
-                        <a class="dropdown-item" onclick="scrollToAnker(5)">Digitale Kommunikation im Tierschutz in Zeiten von Corona</a>
-                        <a class="dropdown-item" onclick="scrollToAnker(6)">Wann und wie sehe ich meine Familie? Aus
-                            physischer Distanz entsteht soziale Nähe.</a>
-                    </div>
-                </div>
-                <li>DAS PROJEKT</li>
+            <ul>                
+                    <li><a onclick="scrollToAnker(1)">Marius</a></li>
+                    <li><a onclick="scrollToAnker(2)">Nils</a></li>
+                    <li><a onclick="scrollToAnker(3)">Hanna</a></li>
+                    <li><a onclick="scrollToAnker(4)">Melanie</a></li>
+                    <li><a onclick="scrollToAnker(5)">Nathalie</a></li>
+                    <li><a onclick="scrollToAnker(6)">Michelle</a></li>
             </ul>
         </nav>
     </header>
 
 
     <div class="horizontal-scroll-wrapper">
+
+        <section id="project" class="js-slidein f1 js-slideinTop">
+            <p class="project_description">
+                Eine potentiell tödliche Pandemie bedroht die Menschheit. Auch die ökonomischen
+                Folgen sind drastisch und viele Menschen fühlen sich in ihren persönlichen Freiheiten
+                bedroht.
+
+                Die Corona-Krise hat das Leben vieler Menschen auf den Kopf gestellt. Die Art mit seinen Mitmenschen zu
+                kommunizieren verändert sich auf allen Ebenen.
+                Innerhalb des Studien-Projekts erzählen die Protagonisten in ihren Filmen von ihren ganz persönlichen
+                Erfahrungen und wie sie die Veränderungen hinsichtlich Kommunikation während und nach der Krise
+                wahrnehmen.
+            </p>
+        </section>
+
         <section id="films">
             <section id="film1" class="video_wrapper f1 js-slidein">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <p>Corona-Kommunikation in der IT-Branche</p>
-                            <p>Ein Film von Marius Großkopf</p>
-                            <div class="pointer-event" onclick="toggleDesc('desc1', this)">
-                                <p class="more_info">Mehr Infos hier</p>
-                                <img class="arrow-down" src="assets/arrow_down_pink.png">
-                            </div>
+                    <video src="assets/videos/film_michelle.mp4" class="video mb" data-wow-duration=".5s" controls></video>
+                    <div class="video_description">
+                        <p class="name">MARIUS</p>
+                        <p>Corona-Kommunikation in der IT-Branche</p>
+                        <div class="pointer-event" onclick="toggleDesc('desc1', this)">
+                            <p class="more_info">Mehr Infos hier</p>
+                            <img class="arrow-down" src="assets/arrow_down_pink.png">
                         </div>
                     </div>
                 </div>
@@ -105,14 +105,14 @@
             </section>
             <section id="film2" class="video_wrapper f2 js-slidein js-slideinTop">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
+                    <video src="assets/IMG_6608_1.mp4" class="video mt" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Gesellschaftsliebender Student findet </p><p>seinen Weg durch die (Corona-) Krise</p>
                             <p>Ein Film von Nils Mahler</p>
                             <div class="pointer-event" onclick="toggleDesc('desc2', this)">
                                 <p class="more_info">Mehr Infos hier</p>
-                                <img class="arrow-down" src="assets/arrow_down_pink.png">
+                                <!-- <img class="arrow-down" src="assets/arrow_down_pink.png"> -->
                             </div>
                         </div>
                     </div>
@@ -130,32 +130,28 @@
             </section>
             <section id="film3" class="video_wrapper f1 js-slidein js-slideinTop">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
+                    <video src="assets/IMG_6608_1.mp4" class="video mb" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Kommunikation in Familien in Zeiten von Corona</p>
                             <p>Ein Film von Hanna Schäfer</p>
                             <div class="pointer-event" onclick="toggleDesc('desc3', this)">
                                 <p class="more_info">Mehr Infos hier</p>
-                                <img class="arrow-down" src="assets/arrow_down_pink.png">
+                                <!-- <img class="arrow-down" src="assets/arrow_down_pink.png"> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="video_description" id="desc3">Corona stellt die zwischenmenschliche Kommunaktion in allen
-                    erdenklich möglichen Bereichen auf die Probe. Auch im Kreise der Familie. Während die einen
-                    gezwungenermaßen getrennt von ihren Familien leben, würden sich andere wiederum wünschen wieder
-                    mal Freunde und andere Menschen sehen zu können oder etwas Zeit für sich selbst zu haben. Denn
+                <p class="video_description" id="desc3">Corona stellt die zwischenmenschliche Kommunikation in allen
+                    erdenklich möglichen Bereichen auf die Probe. Auch im Kreise der Familie. Denn
                     „Social Distancing“ kann im Gegenzug auch „Social Distress“ verursachen.
                     Die fast unvermeidbaren Auseinandersetzungen innerhalb der Familie, durch vieles
-                    Aufeinanderhocken hat fast jeder schon einmal miterlebt. Sei es in Urlauben, an
-                    Weihnachtsfeiertagen oder in sonstigen Ausnahmesituationen. Auch in Zeiten von Corona bemerkt
+                    Aufeinanderhocken hat fast jeder schon einmal miterlebt. Auch in Zeiten von Corona bemerkt
                     die Protagonistin, dass innerhalb der Familie vermehrt bedrückte Stimmung herrscht je länger der
                     Lockdown anhält und man sich allmählich den normalen Alltag zurück wünscht, in dem man wieder
                     mehr Kontakt zu unterschiedlichen Menschen hat. Während die eigenen Konflikte reflektiert
-                    werden, schweifen die Gedanken zu weniger privilegierten Personen ab, wie z.B. Alleinerziehende,
-                    Berufstätige mit Kindern, Familien in kleinen Wohnungen, die wahrscheinlich mit viel
-                    gravierenderen Problemen zu kämpfen haben. Die Protagonistin begibt sich auf Recherche, wie der
+                    werden, schweifen die Gedanken zu weniger privilegierten Personen ab, die wahrscheinlich mit viel
+                    gravierenderen Problemen kämpfen. Die Protagonistin begibt sich auf Recherche, wie der
                     Lockdown die Kommunikation in Familien beeinflusst, sowohl positiv als auch negativ, welche
                     Folgen ein Lagerkoller haben kann und wie man mit solchen ungewöhnlichen Situationen in der
                     Zukunft umgehen kann.
@@ -163,7 +159,7 @@
             </section>
             <section id="film4" class="video_wrapper f2 js-slidein">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
+                    <video src="assets/IMG_6608_1.mp4" class="video mt" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Abstand innerhalb der Familie in Zeiten von Corona</p>
@@ -189,7 +185,7 @@
             </section>
             <section id="film5" class="video_wrapper f1 js-slidein js-slideinTop">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
+                    <video src="assets/IMG_6608_1.mp4" class="video mb" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Digitale Kommunikation im Tierschutz in Zeiten von Corona</p>
@@ -214,7 +210,7 @@
             </section>
             <section id="film6" class="video_wrapper f2 js-slidein">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
+                    <video src="assets/IMG_6608_1.mp4" class="video mt" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Wann und wie sehe ich meine Familie?</p><p> Aus physischer Distanz entsteht soziale Nähe.</p>
@@ -238,21 +234,6 @@
                     Kommunikation.
                 </p>
             </section>
-        </section>
-
-        <section id="project" class="js-slidein f1 js-slideinTop">
-            <h3>Das Projekt</h3>
-            <p class="project_description">
-                Eine potentiell tödliche Pandemie bedroht die Menschheit. Auch die ökonomischen
-                Folgen sind drastisch und viele Menschen fühlen sich in ihren persönlichen Freiheiten
-                bedroht.
-
-                Die Corona-Krise hat das Leben vieler Menschen auf den Kopf gestellt. Die Art mit seinen Mitmenschen zu
-                kommunizieren verändert sich auf allen Ebenen.
-                Innerhalb des Studien-Projekts erzählen die Protagonisten in ihren Filmen von ihren ganz persönlichen
-                Erfahrungen und wie sie die Veränderungen hinsichtlich Kommunikation während und nach der Krise
-                wahrnehmen.
-            </p>
         </section>
     </div>
 
