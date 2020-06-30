@@ -58,7 +58,7 @@
                 <div class="dropdown">
                     <div class="dropdown-toggle js-slidein" type="button" id="dropdownMenuButton" aria-haspopup="true"
                         aria-expanded="false">
-                        <li><a href="#films">DIE FILME</a></li>
+                        <li>DIE FILME</li>
                     </div>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" onclick="scrollToAnker(1)">Corona-Kommunikation in der IT-Branche</a>
@@ -73,7 +73,7 @@
                             physischer Distanz entsteht soziale Nähe.</a>
                     </div>
                 </div>
-                <li><a href="#project">DAS PROJEKT</a></li>
+                <li>DAS PROJEKT</li>
             </ul>
         </nav>
     </header>
@@ -82,171 +82,165 @@
     <div class="horizontal-scroll-wrapper">
         <section id="films">
             <section id="film1" class="video_wrapper f1 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Corona-Kommunikation in der IT-Branche</p>
                             <p>Ein Film von Marius Großkopf</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc1', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Der Kurzfilm handelt von einem Student, welcher dafür
-                        bekannt ist, viel mit seinen Freunden und Kommilitonen zu unternehmen. Die Corona Krise trifft
-                        ihn mit der vollen sozialen Wucht. Nunmehr allein und ohne den direkten Kontakt zu seinen
-                        Freunden, muss ein Weg aus der Krise gefunden werden. Dabei werden auch Fragen zur Zukunft nach
-                        der Krise behandelt. Wie wirkt sich “Physical Distancing” auf Freundschaften aus? Spiegelt sich
-                        die Krise in der zukünftigen Kommunikation wieder?
-                    </p>
                 </div>
+                <p class="video_description" id="desc1">Der Kurzfilm handelt von einem Student, welcher dafür
+                    bekannt ist, viel mit seinen Freunden und Kommilitonen zu unternehmen. Die Corona Krise trifft
+                    ihn mit der vollen sozialen Wucht. Nunmehr allein und ohne den direkten Kontakt zu seinen
+                    Freunden, muss ein Weg aus der Krise gefunden werden. Dabei werden auch Fragen zur Zukunft nach
+                    der Krise behandelt. Wie wirkt sich “Physical Distancing” auf Freundschaften aus? Spiegelt sich
+                    die Krise in der zukünftigen Kommunikation wieder?
+                </p>
             </section>
-            <section id="film2" class="video_wrapper f2 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+            <section id="film2" class="video_wrapper f2 js-slidein js-slideinTop">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Gesellschaftsliebender Student findet </p><p>seinen Weg durch die (Corona-) Krise</p>
                             <p>Ein Film von Nils Mahler</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc2', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Die durch Covid-19 ausgelöste Pandemie zwingt nahezu alle
-                        Unternehmen, die Büros zu schließen und die Mitarbeiter ins Home Office zu schicken. Für viele
-                        Firmen ist Home Office ganz normaler Alltag, einige verzichten sogar komplett auf Büros und
-                        arbeiten ausschließlich remote. Besonders von IT-Unternehmen wird erwartet, dass die Umstellung
-                        reibungslos und schnell umgesetzt wird. Doch was passiert, wenn diese Umstellung innerhalb
-                        kurzer Zeit passiert und die Infrastruktur gar nicht dafür ausgelegt ist? Wie können Kunden
-                        betreut werden und Mitarbeiter effektiv im Team zusammenarbeiten? Dieser Film gibt Einblicke,
-                        auf welche Kommunikationsprobleme IT-Unternehmen in Zeiten von Corona treffen und welche
-                        Auswirkungen dies auf die Zukunft der Kommunikation haben wird.
-                    </p>
                 </div>
+                <p class="video_description" id="desc2">Die durch Covid-19 ausgelöste Pandemie zwingt nahezu alle
+                    Unternehmen, die Büros zu schließen und die Mitarbeiter ins Home Office zu schicken. Für viele
+                    Firmen ist Home Office ganz normaler Alltag, einige verzichten sogar komplett auf Büros und
+                    arbeiten ausschließlich remote. Besonders von IT-Unternehmen wird erwartet, dass die Umstellung
+                    reibungslos und schnell umgesetzt wird. Doch was passiert, wenn diese Umstellung innerhalb
+                    kurzer Zeit passiert und die Infrastruktur gar nicht dafür ausgelegt ist? Wie können Kunden
+                    betreut werden und Mitarbeiter effektiv im Team zusammenarbeiten? Dieser Film gibt Einblicke,
+                    auf welche Kommunikationsprobleme IT-Unternehmen in Zeiten von Corona treffen und welche
+                    Auswirkungen dies auf die Zukunft der Kommunikation haben wird.
+                </p>
             </section>
-            <section id="film3" class="video_wrapper f1 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+            <section id="film3" class="video_wrapper f1 js-slidein js-slideinTop">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Kommunikation in Familien in Zeiten von Corona</p>
                             <p>Ein Film von Hanna Schäfer</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc3', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Corona stellt die zwischenmenschliche Kommunaktion in allen
-                        erdenklich möglichen Bereichen auf die Probe. Auch im Kreise der Familie. Während die einen
-                        gezwungenermaßen getrennt von ihren Familien leben, würden sich andere wiederum wünschen wieder
-                        mal Freunde und andere Menschen sehen zu können oder etwas Zeit für sich selbst zu haben. Denn
-                        „Social Distancing“ kann im Gegenzug auch „Social Distress“ verursachen.
-                        Die fast unvermeidbaren Auseinandersetzungen innerhalb der Familie, durch vieles
-                        Aufeinanderhocken hat fast jeder schon einmal miterlebt. Sei es in Urlauben, an
-                        Weihnachtsfeiertagen oder in sonstigen Ausnahmesituationen. Auch in Zeiten von Corona bemerkt
-                        die Protagonistin, dass innerhalb der Familie vermehrt bedrückte Stimmung herrscht je länger der
-                        Lockdown anhält und man sich allmählich den normalen Alltag zurück wünscht, in dem man wieder
-                        mehr Kontakt zu unterschiedlichen Menschen hat. Während die eigenen Konflikte reflektiert
-                        werden, schweifen die Gedanken zu weniger privilegierten Personen ab, wie z.B. Alleinerziehende,
-                        Berufstätige mit Kindern, Familien in kleinen Wohnungen, die wahrscheinlich mit viel
-                        gravierenderen Problemen zu kämpfen haben. Die Protagonistin begibt sich auf Recherche, wie der
-                        Lockdown die Kommunikation in Familien beeinflusst, sowohl positiv als auch negativ, welche
-                        Folgen ein Lagerkoller haben kann und wie man mit solchen ungewöhnlichen Situationen in der
-                        Zukunft umgehen kann.
-                    </p>
                 </div>
+                <p class="video_description" id="desc3">Corona stellt die zwischenmenschliche Kommunaktion in allen
+                    erdenklich möglichen Bereichen auf die Probe. Auch im Kreise der Familie. Während die einen
+                    gezwungenermaßen getrennt von ihren Familien leben, würden sich andere wiederum wünschen wieder
+                    mal Freunde und andere Menschen sehen zu können oder etwas Zeit für sich selbst zu haben. Denn
+                    „Social Distancing“ kann im Gegenzug auch „Social Distress“ verursachen.
+                    Die fast unvermeidbaren Auseinandersetzungen innerhalb der Familie, durch vieles
+                    Aufeinanderhocken hat fast jeder schon einmal miterlebt. Sei es in Urlauben, an
+                    Weihnachtsfeiertagen oder in sonstigen Ausnahmesituationen. Auch in Zeiten von Corona bemerkt
+                    die Protagonistin, dass innerhalb der Familie vermehrt bedrückte Stimmung herrscht je länger der
+                    Lockdown anhält und man sich allmählich den normalen Alltag zurück wünscht, in dem man wieder
+                    mehr Kontakt zu unterschiedlichen Menschen hat. Während die eigenen Konflikte reflektiert
+                    werden, schweifen die Gedanken zu weniger privilegierten Personen ab, wie z.B. Alleinerziehende,
+                    Berufstätige mit Kindern, Familien in kleinen Wohnungen, die wahrscheinlich mit viel
+                    gravierenderen Problemen zu kämpfen haben. Die Protagonistin begibt sich auf Recherche, wie der
+                    Lockdown die Kommunikation in Familien beeinflusst, sowohl positiv als auch negativ, welche
+                    Folgen ein Lagerkoller haben kann und wie man mit solchen ungewöhnlichen Situationen in der
+                    Zukunft umgehen kann.
+                </p>
             </section>
             <section id="film4" class="video_wrapper f2 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Abstand innerhalb der Familie in Zeiten von Corona</p>
                             <p>Ein Film von Melanie Tremp</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc4', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Das Coronavirus und seine Ausmaße erstrecken sich über das
-                        Leben von allen
-                        Menschen. So ist auch die Protagonistin des Films von diesen Ausmaßen betroffen. Im weiteren
-                        Verlauf der Coronakrise fallen der Protagonistin einige Beobachtungen in ihrem Umfeld auf: Zu
-                        Anfang des Lockdowns wurde konsequent Abstand eingehalten, doch mittlerweile erscheint die
-                        Situation gar nicht mehr so schlimm wie damals und man rückt wieder enger zusammen. Doch ist da
-                        so vernünftig? Und woran liegt es, dass mit der Zeit die Situation als weniger schlimm erachtet
-                        wird, auch wenn sich eigentlich nichts geändert hat? Dieser Kurzfilm gibt einen Einblick in das
-                        Leben während des Corona Lockdowns und zeigt Probleme im Familienleben bzw. Abstandhalten
-                        innerhalb der Familie auf, die daraus resultieren.
-                    </p>
                 </div>
+                <p class="video_description" id="desc4">Das Coronavirus und seine Ausmaße erstrecken sich über das
+                    Leben von allen
+                    Menschen. So ist auch die Protagonistin des Films von diesen Ausmaßen betroffen. Im weiteren
+                    Verlauf der Coronakrise fallen der Protagonistin einige Beobachtungen in ihrem Umfeld auf: Zu
+                    Anfang des Lockdowns wurde konsequent Abstand eingehalten, doch mittlerweile erscheint die
+                    Situation gar nicht mehr so schlimm wie damals und man rückt wieder enger zusammen. Doch ist da
+                    so vernünftig? Und woran liegt es, dass mit der Zeit die Situation als weniger schlimm erachtet
+                    wird, auch wenn sich eigentlich nichts geändert hat? Dieser Kurzfilm gibt einen Einblick in das
+                    Leben während des Corona Lockdowns und zeigt Probleme im Familienleben bzw. Abstandhalten
+                    innerhalb der Familie auf, die daraus resultieren.
+                </p>
             </section>
-            <section id="film5" class="video_wrapper f1 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+            <section id="film5" class="video_wrapper f1 js-slidein js-slideinTop">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Digitale Kommunikation im Tierschutz in Zeiten von Corona</p>
                             <p>Ein Film von Nathalie Wolf</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc5', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Das Kontaktverbot während der Corona-Pandemie stellt die
-                        Gesellschaft vor vielerlei Probleme. Kurzarbeit, Existenzängste und soziale Isolation sind nur
-                        einige der Folgen. Doch nicht nur die Menschen leiden unter der außergewöhnlichen Situation.
-                        Auch Tiere sind von den erlassenen Maßnahmen betroffen. Zootiere werden durch finanzielle
-                        Probleme von Notschlachtungen bedroht, die Vermittlung von Tierheimtieren wird erschwert und
-                        Auslandstiere sitzen fest und können nicht zu ihren Familien reisen. Die Protagonistin begibt
-                        sie sich auf die Suche, wie der Lockdown die Arbeit im Tierschutz und das Tierwohl beeinflusst
-                        hat. Sie fragt sich, ob Probleme durch digitale Medien überwunden werden konnten und was dies
-                        für die Zukunft bedeutet.
-                    </p>
                 </div>
+                <p class="video_description" id="desc5">Das Kontaktverbot während der Corona-Pandemie stellt die
+                    Gesellschaft vor vielerlei Probleme. Kurzarbeit, Existenzängste und soziale Isolation sind nur
+                    einige der Folgen. Doch nicht nur die Menschen leiden unter der außergewöhnlichen Situation.
+                    Auch Tiere sind von den erlassenen Maßnahmen betroffen. Zootiere werden durch finanzielle
+                    Probleme von Notschlachtungen bedroht, die Vermittlung von Tierheimtieren wird erschwert und
+                    Auslandstiere sitzen fest und können nicht zu ihren Familien reisen. Die Protagonistin begibt
+                    sie sich auf die Suche, wie der Lockdown die Arbeit im Tierschutz und das Tierwohl beeinflusst
+                    hat. Sie fragt sich, ob Probleme durch digitale Medien überwunden werden konnten und was dies
+                    für die Zukunft bedeutet.
+                </p>
             </section>
             <section id="film6" class="video_wrapper f2 js-slidein">
-                <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
-                <div class="hover">
+                <div class="video-container">
+                    <video src="assets/IMG_6608_1.mp4" class="video" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Wann und wie sehe ich meine Familie?</p><p> Aus physischer Distanz entsteht soziale Nähe.</p>
                             <p>Ein Film von Michelle Schmidt</p>
-                            <div onclick="toggleDesc('desc1', this)">
-                                <p id=more_info>Mehr Infos hier</p>
+                            <div class="pointer-event" onclick="toggleDesc('desc6', this)">
+                                <p class="more_info">Mehr Infos hier</p>
                                 <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
-
                         </div>
                     </div>
-                    <p class="video_description" id="desc1">Von 0 auf 100 zum Einzelgänger. Corona zwingt die gesamte
-                        Welt in die Abschottung zur Außenwelt. Michelle, 24, lebt alleine in ihrer 1-Zimmer-Wohnung Nähe
-                        Heidelberg. Aus Arbeiten gehen wurde Home-Office und aus Uni-Vorlesungen wurden Video Calls.
-                        Seit über 3 Monaten isoliert in ihren eigenen vier Wänden, teilt sie ihre Erfahrungen mit Social
-                        und Physical Distancing: kein physischer Kontakt zu Familie, Freunden und auch Arbeitskollegen.
-                        Wie wirkt sich das auf ihre Psyche aus? Wie verändert sich ihr Verhältnis zu ihren Liebsten?
-                        Der Film „Wann und wie sehe ich meine Familie?“ gibt Einblicke in die Ausprägungen sowie
-                        Auswirkungen der Isolation auf die mentale Stabilität. Er zeigt die Entwicklung menschlicher
-                        Interaktionen anhand der Digitalisierung und gibt einen Einblick in eine mögliche Zukunft der
-                        Kommunikation.
-                    </p>
                 </div>
+                <p class="video_description" id="desc6">Von 0 auf 100 zum Einzelgänger. Corona zwingt die gesamte
+                    Welt in die Abschottung zur Außenwelt. Michelle, 24, lebt alleine in ihrer 1-Zimmer-Wohnung Nähe
+                    Heidelberg. Aus Arbeiten gehen wurde Home-Office und aus Uni-Vorlesungen wurden Video Calls.
+                    Seit über 3 Monaten isoliert in ihren eigenen vier Wänden, teilt sie ihre Erfahrungen mit Social
+                    und Physical Distancing: kein physischer Kontakt zu Familie, Freunden und auch Arbeitskollegen.
+                    Wie wirkt sich das auf ihre Psyche aus? Wie verändert sich ihr Verhältnis zu ihren Liebsten?
+                    Der Film „Wann und wie sehe ich meine Familie?“ gibt Einblicke in die Ausprägungen sowie
+                    Auswirkungen der Isolation auf die mentale Stabilität. Er zeigt die Entwicklung menschlicher
+                    Interaktionen anhand der Digitalisierung und gibt einen Einblick in eine mögliche Zukunft der
+                    Kommunikation.
+                </p>
             </section>
         </section>
 
-        <section id="project" class="js-slidein f1">
+        <section id="project" class="js-slidein f1 js-slideinTop">
             <h3>Das Projekt</h3>
             <p class="project_description">
                 Eine potentiell tödliche Pandemie bedroht die Menschheit. Auch die ökonomischen
@@ -275,7 +269,11 @@
 
             $(document).ready(function () {
                 $('html, body, *').mousewheel(function (e, delta) {
-                    this.scrollLeft -= (delta);
+                    if (delta < 0) { 
+                        this.scrollLeft -= (delta -40 );
+                    } else if (delta > 0){ 
+                        this.scrollLeft -= (delta +40 );
+                    }this.scrollLeft -= (delta);
                     e.preventDefault();
                 });
             });
