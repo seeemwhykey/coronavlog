@@ -61,7 +61,6 @@ header nav {
   margin-bottom: 10%;
   padding: 80px 0 20px 30%;
   height: 100%;
-  cursor: pointer;
 }
 
 header nav ul {
@@ -81,6 +80,7 @@ header nav ul li {
   font-weight: 400;
   margin-right: 500px;
   display: inline;
+  cursor: pointer;
 }
 
 header nav ul li ul > li {
@@ -176,24 +176,25 @@ header .dropdown-toggle::after {
   pointer-events: none !important;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay #more_info {
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay .more_info {
   margin: 100px 0 0 0;
   font-size: 14px;
   color: #FADD00 !important;
   pointer-events: auto !important;
+  cursor: pointer;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper:hover .overlay p {
   color: #F8F8F7 !important;
-  cursor: pointer;
   font-size: 25px;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay img {
+.horizontal-scroll-wrapper #films .video_wrapper:hover .overlay img.arrow-down {
   height: 10px;
   width: 10px;
   -webkit-transition: 400ms ease-in all;
   transition: 400ms ease-in all;
+  cursor: pointer !important;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper p.video_description {
