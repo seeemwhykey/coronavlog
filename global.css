@@ -13,6 +13,7 @@ html, body {
 
 h1, h2 {
   line-height: .9 !important;
+  font-family: 'Unica One', cursive !important;
 }
 
 h1 {
@@ -68,6 +69,7 @@ header nav {
   width: 100%;
   padding-left: 300px;
   padding-top: 80px;
+  font-family: 'Unica One', cursive !important;
 }
 
 header nav ul {
@@ -161,11 +163,12 @@ header .dropdown-toggle::after {
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper .video_description {
+  font-size: 14px;
   text-align: center;
   z-index: -1;
   opacity: 0;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
   -webkit-transition: all 1200ms ease-in-out;
   transition: all 1200ms ease-in-out;
 }
@@ -174,12 +177,16 @@ header .dropdown-toggle::after {
   margin: 0;
 }
 
-.horizontal-scroll-wrapper #films .video_wrapper .video_description .pointer-event .more_info {
-  font-size: 12px;
-}
-
 .horizontal-scroll-wrapper #films .video_wrapper .video-container {
   position: relative;
+  font-family: 'Unica One', cursive !important;
+}
+
+.horizontal-scroll-wrapper #films .video_wrapper .video-container .more_info {
+  font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+  color: #e9c215 !important;
+  margin-bottom: 0 !important;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper .video-container .video {
@@ -189,15 +196,11 @@ header .dropdown-toggle::after {
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper .video-container .mb {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper .video-container .mt {
-  margin-top: 50px;
-}
-
-.horizontal-scroll-wrapper #films .video_wrapper .video-container .name {
-  font-weight: 800;
+  margin-top: 30px;
 }
 
 .horizontal-scroll-wrapper #films .video_wrapper .video-container p {
