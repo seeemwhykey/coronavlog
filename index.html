@@ -86,7 +86,7 @@
             <section id="film1" class="video_wrapper f1 js-slidein">
                 <div class="video-container">
                     <video src="assets/videos/film_michelle.mp4" class="video mb" data-wow-duration=".5s" controls></video>
-                    <div class="video_description">
+                    <div class="overlay">
                         <p class="name">MARIUS</p>
                         <p>Corona-Kommunikation in der IT-Branche</p>
                         <div class="pointer-event" onclick="toggleDesc('desc1', this)">
@@ -105,17 +105,18 @@
             </section>
             <section id="film2" class="video_wrapper f2 js-slidein js-slideinTop">
                 <div class="video-container">
-                    <video src="assets/IMG_6608_1.mp4" class="video mt" data-wow-duration=".5s" controls></video>
                     <div class="overlay">
                         <div class="overlay-text">
                             <p>Gesellschaftsliebender Student findet </p><p>seinen Weg durch die (Corona-) Krise</p>
                             <p>Ein Film von Nils Mahler</p>
                             <div class="pointer-event" onclick="toggleDesc('desc2', this)">
                                 <p class="more_info">Mehr Infos hier</p>
-                                <!-- <img class="arrow-down" src="assets/arrow_down_pink.png"> -->
+                                <img class="arrow-down" src="assets/arrow_down_pink.png">
                             </div>
                         </div>
                     </div>
+                    <video src="assets/IMG_6608_1.mp4" class="video mt" data-wow-duration=".5s" controls></video>
+
                 </div>
                 <p class="video_description" id="desc2">Die durch Covid-19 ausgelöste Pandemie zwingt nahezu alle
                     Unternehmen, die Büros zu schließen und die Mitarbeiter ins Home Office zu schicken. Für viele
