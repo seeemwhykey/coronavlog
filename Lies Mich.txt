@@ -1,0 +1,7 @@
+Um die Website anzuschauen bitte folgende Schritte durchführen:
+
+1. Website-Ordner öffnen
+2. Rechtsklick auf die Datei index.html
+3. "Öffnen mit" auswählen
+4. Chrome Browser (oder Firefox) auswählen
+
